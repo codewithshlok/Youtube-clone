@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.OVUMFVp8elGfMYh-27fTLAHaFO?w=274&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" type="image/x-icon">
+    <title>Youtube Clone</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-section">
+            <div class="hamburger">
+                <img src="/img/hamburger-menu.svg" alt="menu">
+            </div>
+            <div class="logo">
+                <img src="/img/youtube-logo.svg" alt="Youtube logo">
+            </div>
+        </div>
+        <div class="middle-section">
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </div>
+            <button class="btn">
+                <img src="/img/search.svg" alt="search">
+            </button>
+            <div class="voice-search">
+                <img src="/img/voice-search-icon.svg" alt="voice search">
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="upload">
+                <img src="/img//upload.svg" alt="upload">
+            </div>
+            <div class="notification">
+                <img src="/img/notifications.svg" alt="notification">
+
+            </div>
+            <p class="account">
+                P
+            </p>
+        </div>
+    </header>
+    <section id="side-bar-section">
+        <div>
+            <ul class="side-bar">
+                <li id="active-title">
+                    <a href=""><img src="/img/home.svg" alt="" class="side-menu-img"></a>
+                    <a href="#" class="side-bar-titles active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="/img/icons8-youtube-shorts.svg" alt="" class="side-menu-img"></a>
+                    <a href="#" class="side-bar-titles">
+                        Shorts
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="/img/explore.svg" alt="" class="side-menu-img"></a>
+                    <a href="#" class="side-bar-titles">
+                        Explore
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr style="margin: 0px 10px 0px 10px;">
+        <div>
+            <ul class="side-bar">
+                <li>
+                    <a href=""><img src="/img/library.svg" alt="" class="side-menu-img"></a>
+                    <a href="#" class="side-bar-titles">
+                        Library
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-clock-rotate-left" style="color: #000000;"></i>
+                    <a href="#" class="side-bar-titles">
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="/img/originals.svg" alt="" class="side-menu-img"></a>
+                    <a href="#" class="side-bar-titles">
+                        Your videos
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-clock" style="color: #000000;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Watch later
+                    </a>
+                </li>
+                <li>
+                    <i class='fas fa-thumbs-up' style="color: #000000;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Liked videos
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr style="margin: 0px 10px 0px 10px;">
+        <div>
+            <p class="side-bar-heading">
+                SUBSCRIPTIONS
+            </p>
+            <ul class="side-bar">
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://th.bing.com/th/id/OIP.pgP9IG8okMek6CQTpG0bpgHaF3?rs=1&pid=ImgDetMain"
+                            class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">
+                        The Puzzle World
+                    </a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://live.staticflickr.com/3022/3252600432_2c2d8369ce.jpg"
+                            class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">
+                        Rick Sorkin
+                    </a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://www.tech-wonders.com/wp-content/uploads/2018/08/Top-5-Most-Useful-Android-Apps-in-Daily-Life.jpg"
+                            class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">
+                        Android Daily
+                    </a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://th.bing.com/th/id/R.512813c602e59022b48541f8392a2189?rik=gqsojbjMo6txOw&riu=http%3a%2f%2fimg.bleacherreport.net%2fimg%2fimages%2fphotos%2f002%2f797%2f580%2f155aed656be14751fc0512909f1e4df7_crop_exact.jpg%3fw%3d1200%26h%3d1200%26q%3d75&ehk=MxkC73vEwsPlAlNvmyTiVSTe70Xd8bZeN1CQdZvLuQg%3d&risl=&pid=ImgRaw&r=0"
+                            class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">
+                        Mike Miller
+                    </a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://th.bing.com/th/id/OIP.AO6LXrAVv8eJLnTZH8I4PwHaFx?rs=1&pid=ImgDetMain"
+                            class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">
+                        Best Tips
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr style="margin: 0px 10px 0px 10px;">
+        <div>
+            <p class="side-bar-heading">
+                MORE FROM YOUTUBE
+            </p>
+            <ul class="side-bar">
+                <li>
+                    <i class='fab fa-youtube'></i>
+                    <a href="#" class="side-bar-titles">
+                        YouTube Premium
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-film" style="color: #5d5e5f;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Films
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-gamepad"></i>
+                    <a href="#" class="side-bar-titles">
+                        Gaming
+                    </a>
+                </li>
+                <li>
+                    <i class='fas fa-lightbulb'></i>
+                    <a href="#" class="side-bar-titles">
+                        Learning
+                    </a>
+                </li>
+                <li>
+                    <i class='fas fa-trophy'></i>
+                    <a href="#" class="side-bar-titles">
+                        Sports
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr style="margin: 0px 10px 0px 10px;">
+        <div>
+            <ul class="side-bar">
+                <li>
+                    <i class="fa-solid fa-gear" style="color: #5d5e5f;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <i class='fas fa-flag'></i>
+                    <a href="#" class="side-bar-titles">
+                        Report history
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-headset" style="color: #5d5e5f;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Help
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-share" style="color: #5d5e5f;"></i>
+                    <a href="#" class="side-bar-titles">
+                        Send feedback
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr style="margin: 0px 10px 0px 10px;">
+    </section>
+    <section class="tranding">
+        <div class="trend-container">
+            <button class="tranding-option">All</button>
+            <button class="tranding-option">Music</button>
+            <button class="tranding-option">Mixes</button>
+            <button class="tranding-option">Bollywood Music </button>
+            <button class="tranding-option">Live</button>
+            <button class="tranding-option">Mantras</button>
+            <button class="tranding-option">Ramayan</button>
+            <button class="tranding-option">News</button>
+            <button class="tranding-option">Playlists</button>
+            <button class="tranding-option">Comedy</button>
+            <button class="tranding-option">Recently uploaded</button>
+            <button class="tranding-option">Watched</button>
+        </div>
+    </section>
+    <main id="video-section">
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.f24Zkv9WfG-_Mn0JIANFWQHaE8?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img  src="https://th.bing.com/th/id/OIP.f24Zkv9WfG-_Mn0JIANFWQHaE8?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Top 5 Android 12 Features
+                    </a>
+                    <a href="#" class="channel-name">
+                        Android Daily
+                    </a>
+                    <a href="#" class="views">
+                        2M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        1 week ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.ZbOreueYkDmBkB6T8wxXFgHaE8?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-2"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.ZbOreueYkDmBkB6T8wxXFgHaE8?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        The 10 BEST Shows of 2021!
+                    </a>
+                    <a href="#" class="channel-name">
+                        Mike Miller
+                    </a>
+                    <a href="#" class="views">1K views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">2 months ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.duVKu4cqE76tF_8U63rwCQHaEK?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-3"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.r0iawYzVXYJKsMEeMk93YQHaEK?w=274&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7g"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        5 New Features of YouTube
+                    </a>
+                    <a href="#" class="channel-name">
+                        Android Daily
+                    </a>
+                    <a href="#" class="views">
+                        2.7K views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        5 days ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.QRyT-3LtTfeNlB7DXWM4qwHaD4?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-4"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.QRyT-3LtTfeNlB7DXWM4qwHaD4?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        How To Improve Your
+                        YouTube Recommendations
+                    </a>
+                    <a href="#" class="channel-name">
+                        Best Tips
+                    </a>
+                    <a href="#" class="views">
+                        3K views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        3 days ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.lNEONfQf_7Zw7CRmb6RC_wHaE8?w=282&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-5"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.lNEONfQf_7Zw7CRmb6RC_wHaE8?w=282&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Rick Sorkin - Your Eyes (Official Video)
+                    </a>
+                    <a href="#" class="channel-name">
+                        Rick Sorkin
+                    </a>
+                    <a href="#" class="views">
+                        5M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 year ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.8ydb0l9u7q6aPVZ6y8O-igHaEo?w=225&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-6"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.8ydb0l9u7q6aPVZ6y8O-igHaEo?w=225&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        15 Photography Tips for Beginners
+                    </a>
+                    <a href="#" class="channel-name">
+                        Photography World
+                    </a>
+                    <a href="#" class="views">
+                        506 views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        5 weeks ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.6KDvBXbtTY2724crZgKUgAAAAA?w=189&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-7"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.6KDvBXbtTY2724crZgKUgAAAAA?w=189&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        David Scott -
+                        Another Year (Official Lyric Video)
+                    </a>
+                    <a href="#" class="channel-name">
+                        Android Daily
+                    </a>
+                    <a href="#" class="views">
+                        500K views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        1 month ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.7u2k4N_Wk_x8GHao6rcvfwHaEx?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-8"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.7u2k4N_Wk_x8GHao6rcvfwHaEx?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        5 Popular Sports Right Now
+                    </a>
+                    <a href="#" class="channel-name">
+                        Sports Daily
+                    </a>
+                    <a href="#" class="views">
+                        2K views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        5 weeks ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.OYyEBrxAaUL0xx3B_wPxkgAAAA?w=328&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-9"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.OYyEBrxAaUL0xx3B_wPxkgAAAA?w=328&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Puzzles - Official Trailer (HD)
+                    </a>
+                    <a href="#" class="channel-name">
+                        The Puzzle World
+                    </a>
+                    <a href="#" class="views">
+                        2M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        2 months ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.NkhAy67o_Z_udAuef3wBbAHaID?w=152&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-10"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img  src="https://th.bing.com/th/id/OIP.NkhAy67o_Z_udAuef3wBbAHaID?w=152&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Ania Palmer - Changes (Official Video)
+                    </a>
+                    <a href="#" class="channel-name">
+                        Ania Palmer
+                    </a>
+                    <a href="#" class="views">
+                        1M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        5 months ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.hqGLTdZ7_MA9OOtffnxFhgHaEU?w=302&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-11"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.hqGLTdZ7_MA9OOtffnxFhgHaEU?w=302&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Rachel Spectre -
+                        Footsteps (Official Video)
+                    </a>
+                    <a href="#" class="channel-name">
+                        Rachel Spectre
+                    </a>
+                    <a href="#" class="views">
+                        2M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        11 months ago
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://th.bing.com/th/id/OIP.-6UF0JUXeqlhvySPivqy6QHaI9?w=123&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" id="image-12"
+                class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://th.bing.com/th/id/OIP.-6UF0JUXeqlhvySPivqy6QHaI9?w=123&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">
+                        Top 5 Android 11 Features
+                    </a>
+                    <a href="#" class="channel-name">
+                        Android Daily
+                    </a>
+                    <a href="#" class="views">
+                        3M views
+                    </a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">
+                        1 year ago
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
